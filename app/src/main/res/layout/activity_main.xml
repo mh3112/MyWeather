@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8bc4ea"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="minhhang.mta.myweather.MainActivity">
+
+    <!--@string: sẽ được chỉ định đến file strings.xml,
+        @string/app_name sẽ được dẫn đến chuỗi app_name nó là app_name-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:srcCompat="@mipmap/na"
+            android:id="@+id/img_View"/>
+
+        <TextView
+            android:id="@+id/tv_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:text="Temperature"
+            android:textColor="#ffffff"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/tv_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="110dp"
+            android:text="Condition"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="130dp"
+            android:text="Location"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listViewWeather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp">
+
+    </ListView>
+
+
+</RelativeLayout>
